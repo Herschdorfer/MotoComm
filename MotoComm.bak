@@ -1,0 +1,183 @@
+EESchema Schematic File Version 2
+LIBS:power
+LIBS:device
+LIBS:switches
+LIBS:relays
+LIBS:motors
+LIBS:transistors
+LIBS:conn
+LIBS:linear
+LIBS:regul
+LIBS:74xx
+LIBS:cmos4000
+LIBS:adc-dac
+LIBS:memory
+LIBS:xilinx
+LIBS:microcontrollers
+LIBS:dsp
+LIBS:microchip
+LIBS:analog_switches
+LIBS:motorola
+LIBS:texas
+LIBS:intel
+LIBS:audio
+LIBS:interface
+LIBS:digital-audio
+LIBS:philips
+LIBS:display
+LIBS:cypress
+LIBS:siliconi
+LIBS:opto
+LIBS:atmel
+LIBS:contrib
+LIBS:valves
+LIBS:F-3188_CSR8645
+EELAYER 25 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L F-3188_CSR8645 U?
+U 1 1 5A4BCC78
+P 4350 3300
+F 0 "U?" H 4250 3700 60  0000 C CNN
+F 1 "F-3188_CSR8645" H 4100 4800 60  0000 C CNN
+F 2 "" H 4350 1600 60  0000 C CNN
+F 3 "" H 4350 1600 60  0000 C CNN
+	1    4350 3300
+	1    0    0    -1  
+$EndComp
+$Comp
+L LED D?
+U 1 1 5A4BCCC6
+P 1900 2300
+F 0 "D?" H 1900 2400 50  0000 C CNN
+F 1 "LED" H 1900 2200 50  0000 C CNN
+F 2 "" H 1900 2300 50  0001 C CNN
+F 3 "" H 1900 2300 50  0001 C CNN
+	1    1900 2300
+	0    -1   -1   0   
+$EndComp
+$Comp
+L LED D?
+U 1 1 5A4BCDEF
+P 1600 2300
+F 0 "D?" H 1600 2400 50  0000 C CNN
+F 1 "LED" H 1600 2200 50  0000 C CNN
+F 2 "" H 1600 2300 50  0001 C CNN
+F 3 "" H 1600 2300 50  0001 C CNN
+	1    1600 2300
+	0    -1   -1   0   
+$EndComp
+$Comp
+L LED D?
+U 1 1 5A4BCE33
+P 1300 2300
+F 0 "D?" H 1300 2400 50  0000 C CNN
+F 1 "LED" H 1300 2200 50  0000 C CNN
+F 2 "" H 1300 2300 50  0001 C CNN
+F 3 "" H 1300 2300 50  0001 C CNN
+	1    1300 2300
+	0    -1   -1   0   
+$EndComp
+$Comp
+L R R?
+U 1 1 5A4BCE80
+P 1900 1850
+F 0 "R?" V 1980 1850 50  0000 C CNN
+F 1 "R" V 1900 1850 50  0000 C CNN
+F 2 "" V 1830 1850 50  0001 C CNN
+F 3 "" H 1900 1850 50  0001 C CNN
+	1    1900 1850
+	-1   0    0    1   
+$EndComp
+$Comp
+L R R?
+U 1 1 5A4BCEE5
+P 1600 1850
+F 0 "R?" V 1680 1850 50  0000 C CNN
+F 1 "220" V 1600 1850 50  0000 C CNN
+F 2 "" V 1530 1850 50  0001 C CNN
+F 3 "" H 1600 1850 50  0001 C CNN
+	1    1600 1850
+	-1   0    0    1   
+$EndComp
+$Comp
+L R R?
+U 1 1 5A4BCF14
+P 1300 1850
+F 0 "R?" V 1380 1850 50  0000 C CNN
+F 1 "220" V 1300 1850 50  0000 C CNN
+F 2 "" V 1230 1850 50  0001 C CNN
+F 3 "" H 1300 1850 50  0001 C CNN
+	1    1300 1850
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	1900 2000 1900 2150
+Wire Wire Line
+	1600 2000 1600 2150
+Wire Wire Line
+	1300 2000 1300 2150
+$Comp
+L D_Schottky D?
+U 1 1 5A4BCF7E
+P 1750 1250
+F 0 "D?" H 1750 1350 50  0000 C CNN
+F 1 "D_Schottky" H 1750 1150 50  0000 C CNN
+F 2 "" H 1750 1250 50  0001 C CNN
+F 3 "" H 1750 1250 50  0001 C CNN
+	1    1750 1250
+	0    -1   -1   0   
+$EndComp
+$Comp
+L D_Schottky D?
+U 1 1 5A4BCFC1
+P 1450 1250
+F 0 "D?" H 1450 1350 50  0000 C CNN
+F 1 "D_Schottky" H 1450 1150 50  0000 C CNN
+F 2 "" H 1450 1250 50  0001 C CNN
+F 3 "" H 1450 1250 50  0001 C CNN
+	1    1450 1250
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	1450 1600 1450 1400
+Wire Wire Line
+	1900 1600 1300 1600
+Wire Wire Line
+	1750 1600 1750 1400
+Wire Wire Line
+	1600 1700 1600 1600
+Connection ~ 1600 1600
+Wire Wire Line
+	1900 1700 1900 1600
+Connection ~ 1750 1600
+Wire Wire Line
+	1300 1600 1300 1700
+Connection ~ 1450 1600
+Wire Wire Line
+	1450 1100 1450 750 
+Wire Wire Line
+	1750 1100 1750 750 
+Text Label 1450 950  1    60   ~ 0
+VBAT
+Text Label 1750 950  1    60   ~ 0
+VCC
+Wire Wire Line
+	1900 2450 1900 2800
+Wire Wire Line
+	1600 2450 1600 2800
+Wire Wire Line
+	1300 2450 1300 2800
+$EndSCHEMATC
